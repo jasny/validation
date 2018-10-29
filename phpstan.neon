@@ -2,5 +2,8 @@ parameters:
     level: 4
     paths:
         - src
+    ignoreErrors:
+        - '#Method .*? has parameter \$object with no typehint specified\.#'
+        - '#Call to function in_array\(\) requires parameter \#3 to be set\.#'
 includes:
   	- vendor/phpstan/phpstan-strict-rules/rules.neon

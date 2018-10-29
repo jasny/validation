@@ -8,6 +8,11 @@
             "name": "Arnold Daniels",
             "email": "arnold@jasny.net",
             "homepage": "http://www.jasny.net"
+        },
+        {
+            "name": "Sergey Boltonosov",
+            "email": "minstriely@gmail.com",
+            "homepage": "https://github.com/Minstel"
         }
     ],
     "support": {
@@ -15,7 +20,10 @@
         "source": "https://github.com/jasny/validation"
     },
     "require": {
-        "php": ">=7.1.0"
+        "php": ">=7.1.0",
+        "jasny/meta": "dev-master",
+        "jasny/entity": "dev-master",
+        "jasny/validation-result": "^1.0"
     },
     "require-dev": {
         "jasny/php-code-quality": "^2.3"
@@ -34,7 +42,7 @@
         "test": [
             "phpunit",
             "phpcs -p src",
-            "phpstan analyse"
+            "phpstan analyse src"
         ],
         "post-create-project-cmd": [
             "bash init.sh && rm init.sh"
